@@ -1,0 +1,267 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+$fa-font-path: "../webfonts";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~admin-lte/dist/css/adminlte.css';
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+
+body, html{
+    height: 100%;
+}
+
+.wrapper{
+    height: 100%;
+}
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.router-link-exact-active, .router-link-active{
+    background-color: #0f4979 !important;
+    color: #fff;
+}
+
+.brand-image {
+    float: left;
+    line-height: .8;
+    max-height: 34px;
+    width: auto;
+    margin-left: .8rem;
+    margin-right: .5rem;
+    margin-top: 10px;
+  }
+
+  .menu-burger, .button-create {
+    background-color:#186d9a !important;
+  }
+  .brand-link {
+    padding: 0.8125rem 0.5rem;
+    font-size: 1.25rem;
+    display: block;
+    line-height: 3;
+    white-space: nowrap;
+  }
+
+  .sidebar-dark-primary {
+    /* background-color: #343a40; */
+    background-color: #0f4979;
+  }
+
+  .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #ffffff !important;
+  background-color: rgba(69, 104, 69, 0.849) !important;
+}
+
+
+.create-post-btn{
+    background-color: #186d9a !important;
+    cursor: pointer;
+    width: 40px;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    height: 40px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    align-items: center;
+    border-left-color:rgba(0, 0, 0, 0.4);
+    border-right-color:rgba(0, 0, 0, 0.4);
+    border-top-color:rgba(0, 0, 0, 0.4);
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.2) 0px 12px 28px 0px;
+    text-align: center;
+}
+
+.create-post-btn:focus, .create-post-btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.create-post-btn img{
+    background-color: #fff;
+}
+
+.navbar{
+    background-color: #ffffff;
+}
+
+.content-wrapper{
+    background-color:#f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.modal-header{
+    border-bottom: solid rgb(222, 226, 230) 1px !important;
+}
+.modal-header .modal-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.info {
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.post-btn{
+    background-color: #186d9a !important;
+}
+
+.modal-content{
+    background-color: #ffffff;
+}
+
+.brand-link{
+    color: #fff !important;
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+nav p{
+    color: #fff;
+}
+
+.post-card{
+    margin-top: 4rem;
+    border-radius: 1rem !important;
+}
+
+.post-notication-wrapper{
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+.post-notification-wrapper{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding-bottom: 1rem;
+}
+.post-title p{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.btn-tab{
+    background-color: transparent;
+}
+
+.btn-tab:hover{
+    background-color: rgb(210, 242, 250);
+}
+
+.btn-tab-group{
+    width: 100% !important;
+    height: 3rem;
+}
+
+.btn-tab img{
+    width: 1.5rem;
+}
+.posts-image{
+    height: 20rem !important;
+    cursor:pointer;
+}
+
+.post-image{
+    height: 25rem !important;
+    cursor:pointer;
+}
+
+
+.post-profile-image{
+    height: 2.5rem !important;
+}
+
+.post-header{
+    display: inline-block;
+}
+
+.post-card-container{
+    width: 28rem;
+    padding:5rem 0rem 5rem 0rem;
+}
+
+.dashboard-container{
+    width:100vw;
+}
+.activity-container{
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    bottom: 0;
+}
+
+.post-card-wrapper{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#profile-icon_container{
+    cursor: pointer;
+    width: 30px;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    height: 30px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.2) 0px 12px 28px 0px;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../../../public/img/precious.jpg");
+}
+
+.profile-icons{
+    cursor: pointer;
+    background-color: #d8dadf;
+    border-color:#d8dadf !important;
+    width: 35px;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    height: 35px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.2) 0px 12px 28px 0px;
+}
+
+.menu-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+.profile-icon-wrapper
+{
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    text-align: center;
+}
+
+
+.md-progress-spinner {
+    margin-top: 200px;
+}
